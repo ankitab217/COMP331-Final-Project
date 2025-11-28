@@ -75,11 +75,15 @@ COMP331-Final-Project/
 
 ## 💡 Recommendations (Prioritized)
 
-1. **P0 - Immediate:** Implement CustomerID completeness strategy
-2. **P0 - Immediate:** Standardize returns processing (flag vs. negative values)
-3. **P0 - Immediate:** Mitigate geographic bias through stratified sampling
-4. **P1 - 3 months:** Deploy automated DQ monitoring dashboard
-5. **P1 - 3 months:** Establish data governance framework
+1. **Improve CustomerID Completeness (Critical)** - Introduce a “Guest Customer” category, enforce email capture at checkout, and add ETL validation rules that block loads with excessive missing IDs. 
+
+2. **Standardize Returns Handling (Critical)** - Convert negative quantities into a separate TransactionType variable, require linkage to original invoices, and validate UnitPrice > 0 during ETL processing. 
+
+3. **Reduce Geographic Bias (Critical)**- Apply stratified sampling, oversample non-UK regions, or build region-specific models to ensure fair performance across all markets. 
+
+4. **Automated Data Quality Monitoring (High)** - Create dashboards tracking missing values, invalid entries, and country distribution, with ETL quality gates and alerts. 
+
+5. **Strengthen Data Governance (Medium)** - Document standards, define business rules, maintain a data dictionary, and assign data stewards responsible for ongoing quality checks. 
 
 ---
 
