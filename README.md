@@ -1,6 +1,6 @@
 # COMP331 Data Quality Management - Final Project
 
-**Student:** [Your Name]  
+**Student:** Ankita Bhandari   
 **Course:** COMP/STAT 331 - Data Quality Management  
 **Semester:** Fall 2025  
 **Institution:** University of the Fraser Valley
